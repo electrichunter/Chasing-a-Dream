@@ -1,0 +1,47 @@
+/* Google Fonts'tan Montserrat yükleniyor */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f9; /* Hafif bir arka plan rengi */
+  color: #333; /* Ana metin rengi */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9 ;
+}
+
+/* H1 Başlıklar */
+h1 {
+  font-size: 48px; /* Büyük ve dikkat çekici */
+  font-weight: 800; /* Ekstra kalın */
+  color: #1a73e8; /* Mavi tonunda bir vurgu rengi */
+  text-transform: uppercase; /* Büyük harf */
+  letter-spacing: 2px; /* Hafif harf aralığı */
+  margin-bottom: 20px;
+}
+
+/* H2 Başlıklar */
+h2 {
+  font-size: 36px;
+  font-weight: 700; /* Kalın */
+  color: #444; /* Daha koyu bir ton */
+  letter-spacing: 1px; /* Hafif harf aralığı */
+  margin-bottom: 15px;
+}
+
+/* Paragraf Metni */
+p {
+  font-size: 18px; /* Kolay okunabilir bir boyut */
+  line-height: 1.6; /* Satır aralığı */
+  margin-bottom: 15px;
+}
+
+
+/* Linkler için stil */
+a {
+    text-decoration: none;
+    color: #f39c12;
+    
+}
+
+/* Diğer global stiller burada tanımlanabilir */

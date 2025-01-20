@@ -1,0 +1,140 @@
+/* Genel stil */
+.menuWrapper {
+    position: relative;
+    max-width: 70%;
+  }
+  
+  .hamburgerMenu {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin: 15px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburgerMenu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .hamburgerMenu.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburgerMenu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburgerMenu.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menuContainer {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+  
+  .menuContainer.show {
+    left: 0;
+  }
+  
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuItem {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .accordionToggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .accordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    padding-left: 20px;
+    background: #f9f9f9;
+  }
+  
+  .accordionContent.show {
+    max-height: 200px; /* Alt menülerin maksimum yüksekliği */
+    padding: 10px 20px;
+  }
+  
+  .accordionToggle.active {
+    background: #f0f0f0;
+  }
+  
+  .accordionToggle a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /* Hover ve odak için görsel efekt */
+  .accordionToggle a:hover,
+  .accordionToggle a:focus {
+    color: #ff5622dc;
+  }
+/* Alt menü için temel stil */
+.accordionContent {
+    max-height: 0; /* Başlangıçta görünmez */
+    overflow: hidden; /* Taşan içerikleri gizle */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    padding: 0 20px; /* Başlangıçta içerik boşluğu yok */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    border-left: 2px solid #eee; /* Alt menüye görsel ayrım ekle */
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* Alt menü görünür olduğunda */
+  .accordionContent.show {
+    max-height: 300px; /* Alt menülerin açıldığında maksimum yüksekliği */
+    padding: 10px 20px; /* Görünür olduğunda iç boşluk */
+  }
+  
+  /* Alt menü içindeki bağlantılar */
+  .accordionContent a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0; /* Bağlantılar arasında boşluk */
+    padding: 5px 10px; /* Bağlantıların iç boşluğu */
+    border-radius: 4px; /* Hafif köşeler */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Alt menü bağlantılarında hover efekti */
+  .accordionContent a:hover {
+    background-color: #ff5722; /* Hover sırasında arka plan rengi */
+    color: white; /* Hover sırasında yazı rengi */
+  }
+  
+  /* Aktif alt menü (isteğe bağlı) */
+  .accordionContent .active {
+    background-color: #ff5722; /* Seçili menü arka plan rengi */
+    color: white; /* Seçili menü yazı rengi */
+    font-weight: bold; /* Kalın yazı tipi */
+  }
+    

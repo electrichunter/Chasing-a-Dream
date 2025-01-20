@@ -1,0 +1,36 @@
+/* Sol taraf stil düzenlemesi */
+.home1 {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center;  /* Dikeyde ortalar */
+    height: 50vh; /* Yüksekliği yarım ekran yapar */
+    margin: 100px; /* Kenarlardan mesafe verir */
+    text-align: center; /* İçeriği metinle birlikte ortalar */
+   
+    border-radius: 10px; /* Köşeleri yuvarlar */
+}
+
+/* Başlık ve paragraflar */
+ 
+
+.home1 h2 span {
+    color: #FCA311; /* Altın sarısı renk */
+    font-size: 88px; /* Span için daha büyük font */
+}
+
+.home1 p {
+    color: #000000; /* Beyaz renk */
+    font-size: 20px; /* Daha büyük font */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500; /* Orta kalınlıkta yazı */
+}
+
+/* Hi user bölümü */
+.hiUser {
+    padding: 20px;
+     
+    border-radius: 8px; /* Yuvarlak köşeler */
+    margin-top: 20px; /* Başlıktan mesafe */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+}

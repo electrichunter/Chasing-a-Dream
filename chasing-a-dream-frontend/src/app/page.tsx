@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Cards from "./component/cards-home/card-home";
+import Log from "./login/login";
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         
         </div>  <Cards />
+        <Log />
       </header>
     </div>
   );

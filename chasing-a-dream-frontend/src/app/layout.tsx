@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <main>
                     <Menu /> {/* Menü bileşenini burada çağırıyoruz */}
                     {children} {/* Sayfa içeriği burada yer alacak */}
+
                 </main>
             </body>
         </html>
